@@ -85,7 +85,6 @@ getPredict <- function(model){
 
       # add any final mapping here (e.g., add intercept and mapping)
       prediction$value <- prediction$value + model$points[model$covariateId==0]
-      prediction$value <- prediction$value/10
       prediction$value <- 1/(1+exp(-1*prediction$value))
 
       scaleVal <- max(prediction$value)
