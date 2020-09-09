@@ -32,7 +32,7 @@ oracleTempSchema <- NULL
 cohortTable <- 'tkrSimpleTest'
 
 #============== Pick Study Parts To Run: ===========
-createCohorts = FALSE
+createCohorts = TRUE
 predictTkrSimple = TRUE
 runValidation = TRUE
 
